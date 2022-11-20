@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+body{
+    width: 100%;
+     /* background: rgb(228, 218, 218); */
+     background: #DDDDDA;
+}
+
+.slider-section{
+
+    width: 100%;
+    margin-bottom: 150px;
+    /* border: 1px solid gray; */
+    border: 1px solid #f1efeb;
+   
+}
+
+.radio-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: -70px;
+    align-content: center;
+    justify-content: center;
+}
+
+.radio-btn{
+    width: 20px;
+    height: 20px;
+    border: 2px solid beige;
+    padding: 5px;
+    border-radius: 10px;;
+    transition: 1s;
+    margin-right: 40px;
+}
+.radio-btn:checked{
+    accent-color: beige;   
+}
+
+.slide img{
+    width: 100%;
+    height: auto;
+    transition: 2s;
+}
+
+.arrow{
+    cursor:pointer;
+    position: absolute;
+    top:45%;
+    color:black;
+    background-color: aliceblue;
+    padding: 10px 10px;
+    border-radius:30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+#arrow-previous{
+    left:10px;
+}
+#arrow-next{
+    right:10px;
+}
+
+.slide{
+    display: none;
+}
+.testimonials {
+
+   padding-top: 20px;
+     background:	#f1f1f1; 
+  
+     color: #434343;
+    text-align: center;
+    position: relative;
+    margin-bottom: 80px;
+
+}
+
+.inner {
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding: 50px 20px;
+}
+.inner h1{
+    font-size: 20px;
+    font-family: "Poppins" , sans-serif;
+    font-weight: 500;
+}
+.testimonial-border {
+    width: 160px;
+    height: 5px;
+    background-color: #434343;
+   
+    margin: 26px auto;
+}
+
+.testimonial-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+}
+
+.testimonial-col {
+   
+    width: 30%;
+    box-sizing: border-box;
+    padding: 5px;
+    margin:2px;
+    display: flex;
+    height: auto;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 0%;
+}
+review-text p{
+    font-size: 14px;
+}
+.stars{
+    color: rgba(241, 185, 79, 0.678);
+}
+
+.customer-name {
+
+    font-size: 16px;
+    margin: 20px 0;
+    font-family: "Poppins" , sans-serif;
+    font-weight: 500;
+}
+.review-text{
+    font-size: 13px;
+    font-weight: 200px;
+}
+
+.arrow-testimonial {
+    cursor: pointer;
+    position: absolute;
+    bottom:40%; 
+    display: flex;
+    align-self: center;
+    color: black;
+    /* background-color: rgb(192, 200, 207); */
+    background-color: rgb(241, 185, 79,0.9);
+    padding: 4px 10px;
+    border-radius:100%;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#arrow-previous {
+    left: 10px;
+}
+
+#arrow-next {
+    right: 10px;
+}
+/* <!-- Start of contact us section --> */
+.contact-container{
+    padding: 50px 12px;
+            background: #f1f1f1;
+            color: #434343;
+            text-align: center;
+            margin-top: 0px;
+            display: block;
+            
+
+}
+
+form.contact-form
+{
+    margin-right: 60px;
+}
+
+.contact-container h1{
+  
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Poppins" , sans-serif;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 60px;
+}
+.contact-form{
+    max-width: 60%;
+    overflow: hidden;
+    margin:auto;
+  
+    padding: 16px 0;
+    align-items: center;
+  
+}
+
+
+.cotact-form-container{
+justify-content: center;
+align-items: center;
+
+}
+.contact-form-text{
+    display: block;
+    width: 60%;
+    padding: 10px 20px;
+    padding-right: 30px;;
+    border: 0px;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 300px;
+    text-align: left;
+    margin: 10px 10px;
+
+}
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.contact-form-text{
+    resize:none;
+    height:120px;
+}
+.contact-form-btn{
+     
+    width: 30%;
+    font-size:20px;
+    text-align: center;
+    border:0;
+    background: #34495e;
+    color:#fff;
+    padding:12px ;
+    border-radius: 20px;
+    cursor: pointer;
+    transition:0.5s;
+    margin-top: 20px;
+  
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+}
+.cotact-form-container .contact-form-text{
+    font-size: 15px;
+
+}
+
+
+
+@media screen and (max-width: 481px) 
+{
+    .testimonials
+    {
+width: 100%;
+    }
+    .contact-form-container .contact-form-btn{
+        width:70%;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        font-size: 12px;
+        
+    }
+    .slider-section {
+        width: 100%;
+        margin-bottom: 20px;
+ }
+.contact-container .contact-form{
+
+    margin: 5px;
+    width:80%;
+    margin-left: 15%;
+
+    }
+.contact-container .contact-container .contact-form-text{
+    font-size: 0.5em;;
+
+    }
+.radio-btn {
+    width: 10px;
+    height: 10px;
+    border: 2px solid beige;
+    padding: 5px;
+    border-radius: 4px;
+    transition: 1s;
+    margin-right: 14px;
+}
+    .arrow-testimonial{
+        font-size: 12px;
+    }
+   .stars{
+       size: 2px;
+       display: inline-block;
+       overflow: none;
+   }
+    .customer-name {
+        
+    font-size: 8px;
+    font-weight: 600;
+    margin: 2px 0;
+    font-family: "Poppins" , sans-serif;}
+
+    .review-text{
+        font-size: 6px;
+        font-weight: 300;
+        text-align:justify;
+      
+        margin:0px 0;
+   font-family: "Poppins" , sans-serif;
+    }
+    .inner h1{
+        font-size: 14px;
+        font-family: "Poppins" , sans-serif;
+        font-weight: 400;
+        text-align: center;
+      
+    }
+    .testimonial-border {
+        width: 20%;
+        height: 4px;
+        background-color: #434343;  
+        
+    }
+    .testimonial-col {
+   
+        max-width: 80%;
+        box-sizing: border-box;
+        padding: 5px;
+        margin:2px;
+        display: flex;
+        overflow: none;
+    }
+  
+    .contact-container h1{
+        font-size: 14px;
+        font-family: "Poppins" , sans-serif;
+        font-weight: 400;
+        text-align: center;
+        
+
+    }
+    .contact-container{
+        
+        width:100%;
+        margin:0px;
+        overflow: none;
+    }
+    
+
+    .contact-form{
+        width:100%;
+        margin:5px;
+    }
+    .contact-form-btn{
+        width: 50%;
+        font-size: 14px;
+        align-items: center;
+    }
+
+    .contact-form-text
+    {
+        font-size: 12px;
+        width: 80%;
+        margin: 5%;
+    }
+
+    .contact-form-container input{
+        width: 100%;
+    }
+    .cotact-form-container .contact-form-text{
+        font-size: 10px;
+        width: 100%;
+    }
+    .contact-form-container .contact-form-btn{
+        width:70%;
+        margin-left: 0%;
+        margin-right: 0%;
+        font-size: 12px;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 769px)
+{
+    .testimonial-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       width: 100%;
+        flex-wrap: nowrap;
+        
+    }
+.testimonial-col{
+
+   
+    width: 45%;
+    box-sizing: border-box;
+    padding: 2px;
+    margin:2px;
+    display: flex;
+    overflow: none;
+    align-items: center;
+}
+.cotact-form-container .contact-form-text{
+    font-size: 10px;
+    padding: 2px 2px;
+    font-size: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width:100%;
+}
+.contact-form-btn{
+    width: 50%;
+    font-size: 14px;
+    align-items: center;
+}
+}
+
+/* =======================Contact Section======================== */
